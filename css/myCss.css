@@ -1,0 +1,305 @@
+body{
+	margin:0;
+	font-family: Helvertica Light,Arial,微軟正黑體,新細明體;
+	font-size: 14px;
+	position: relative;
+}
+header{
+		width: 960px;
+		height: 44px;
+		margin:0 auto;
+		display:flex;
+		justify-content:space-between;
+}
+.wrapper_kv{
+	width: 960px;
+	margin:0 auto;
+	z-index: 1;
+
+	margin-top:-100px; //initial
+}
+#logo{
+	width: 143px;
+	height: 44px;
+	background:url(../images/logo_top.png) no-repeat;
+	margin: 10px 0 0 0;
+	
+	
+}
+#functionbtn{
+	width: 22px;height: 22px;
+	background: url(../images/fb.png) no-repeat;
+	margin: 10px 0 0 0;
+	transition: all 0.5s ease-in-out;
+}
+#functionbtn:hover{
+	width: 22px;height: 22px;
+	background: url(../images/fb_hover.png) no-repeat;
+	margin: 10px 0 0 0;
+}
+
+#kv{
+	background: url(../images/kv.png) top no-repeat;
+	width: 710px;height: 710px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	align-items:flex-end;
+
+
+/*initial*/
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */	
+
+}
+#kv p{
+	width: 200px;
+	height: 60px;
+	
+	text-align: center;
+	font-family: Helvertica Light,Arial,微軟正黑體,新細明體;
+	font-size: 12px;
+	color:#6c6c6c;
+	line-height: 18px;
+}
+.wrapper_kv nav{
+	
+	width: 350px;
+	margin:0 auto;
+	margin-bottom:80px;
+	display:flex;
+	justify-content:space-between;
+	font-family:Helvetica,arial;
+	font-weight: lighter;
+	font-size: 18px;
+
+	/*initial*/
+	margin-top: -60px;
+	}
+.wrapper_kv a{
+	text-decoration: none;
+}
+.wrapper_kv nav div{	
+	color: #6c6c6c;
+
+	text-align: center;
+	width: 80px;
+
+	transition: all 0.5s ease-in-out;
+}
+.wrapper_kv nav div:hover{
+
+	color: #eb426a;
+	text-align: center;
+	width: 80px;	
+}
+.wrapper_kv nav div:visited{
+
+	color: #6c6c6c;
+	text-align: center;
+	width: 80px;	
+}
+
+
+#about{
+	
+}
+#design{
+	/background-color: #ffdd00;
+}
+#art{
+	
+}
+
+.icon_darrow{
+	display: block;
+	
+	background: url(../images/icon_darrow.svg);
+	width: 26px;height: 24px;
+	
+	margin: 100px auto 100px auto;
+}
+.mainSection{
+	text-align: center;
+	font-family:Helvetica,Arial;
+	font-weight: lighter;
+
+}
+.mainSection h1{
+	font-weight: lighter;
+	font-size: 50px;
+	color:#636363;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	bfackground: #3a9f73;
+	height: 80px;
+}
+
+
+/*about區塊*/
+.about {
+	
+	
+}
+.about h1{}
+.about .wrapper{
+	width: 550px;
+	margin:0 auto;
+	display: flex;
+	justify-content:space-between;
+
+}
+
+.about h2{
+	font-size: 14px;
+	font-weight: lighter;
+	color:#eb426a;
+}
+.about .wrapper .txt{
+	text-align: left;
+	width: 220px;
+
+}
+.about .wrapper .txt .artist_name{
+	font-size: 25px;
+	color:#6c6c6c;
+}
+.about .wrapper .txt .txt{
+	list-style: none;
+	margin-left: -40px;
+	font-size: 14px;
+	line-height: 25px;
+
+}
+.about .wrapper .txt .txt li{
+	margin-bottom:20px;
+	color:363636;
+}
+.about .wrapper .artist{
+	line-height: 25px;
+	font-size: 14px;
+	color:#6c6c6c;
+	width: 220px;
+	
+}
+.about .wrapper .artist div{
+	float:right;
+}
+.about .wrapper .artist_bighead{
+	background: url(../images/artist-clintred-bighead.jpg);
+	width: 150px;height: 150px;
+
+}
+.about .wrapper .vline{
+	width: 3px;height: 320px;
+	background: url(../images/vline.png) repeat-y;
+	/transform:rotate(90deg);
+	margin:0px 0 0 0;
+}
+
+/*desig區塊*/
+.design{
+	
+
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f4f4f4 0%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f4f4f4 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f4f4f4 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+	
+
+}
+.design .wrapper{
+	
+	max-width: 900px;
+	height: 230px;
+	margin: 0 auto;
+}
+.design .wrapper .unit{
+	
+	max-width: 225px;max-height: 300px;
+	
+	float:left;
+
+	text-align: left;
+	line-height: 19px;
+	font-size:14px;
+	font-family: helvetica,arial,微軟正黑體,新細明體;
+}
+.design .wrapper .unit .unit_hover{
+	background: #fff;
+	width: 225px;height: 160px;
+	fmax-width: 225px;fheight: 300px;
+
+	position: absolute;
+	opacity: 0.7;
+	filter: alpha(opacity=70); /* For IE8 and earlier */	
+
+	/*initial*/
+	opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */		
+}
+.design .wrapper .unit .title{
+	color:#6c6c6c;
+	padding-top: 5px;
+}
+.design .wrapper .unit .client{
+	color:#eb426a;
+	margin-bottom: 15px;
+}
+.design .btns{
+	width: 170px;
+	height: 19px;
+	margin:0 auto;
+	
+	
+}
+.design .btns .btn{
+	width: 22px;height: 19px;
+}
+.design .btns .btn_left{
+	background: url(../images/btn_l.png) ;
+	float:left;
+}
+.design .btns .btn_right{
+	background: url(../images/btn_r.png) ;
+	float:right;	
+}
+
+/*art區塊*/
+.art{
+	heightf: 400px;
+	backgrofund: #287ebf;
+}
+.art .wrapper{
+	max-width: 950px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+
+}
+.art .wrapper .unit{
+	max-width: 310px;
+	max-height: 200px;
+	margin-bottom: 6px;
+}
+.art img.pic_unit{
+	width: 310px;height: 180px;
+	
+}
+
+.lionhead{
+	background: url(../images/icon_lionhead.png);
+	width: 150px;height: 169px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+#ClintRedDomain{
+	font-size: 15px;
+	color:#645236;
+	text-align: center;
+	margin:25px auto 100px auto;
+}
