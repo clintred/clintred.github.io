@@ -220,7 +220,6 @@ header{
 .design .wrapper .unit{
 	
 	max-width: 225px;max-height: 300px;
-	
 	float:left;
 
 	text-align: left;
@@ -228,19 +227,33 @@ header{
 	font-size:14px;
 	font-family: helvetica,arial,微軟正黑體,新細明體;
 }
-.design .wrapper .unit .unit_hover{
+
+.design .wrapper .unit .pic_unit{
+	position: relative;
+	width: 225px;
+	height: 160px;
+}
+
+.design .wrapper .unit .pic_unit:before{
+	content: '';
+	display: block;
 	background: #fff;
-	width: 225px;height: 160px;
-	fmax-width: 225px;fheight: 300px;
+	width: 100%;
+	height: 100%;
 
 	position: absolute;
-	opacity: 0.7;
-	filter: alpha(opacity=70); /* For IE8 and earlier */	
-
-	/*initial*/
 	opacity: 0;
-	filter: alpha(opacity=0); /* For IE8 and earlier */		
+	filter: alpha(opacity=0); /* For IE8 and earlier */	
+	transition: all .5s ease-in-out;
+	/*initial*/
+	/*opacity: 0;*/
 }
+
+.design .wrapper .unit .pic_unit:hover:before{
+	opacity: .7;
+	filter: alpha(opacity=70);	
+}
+
 .design .wrapper .unit .title{
 	color:#6c6c6c;
 	padding-top: 5px;
@@ -287,7 +300,8 @@ header{
 	margin-bottom: 6px;
 }
 .art img.pic_unit{
-	width: 310px;height: 180px;
+	width: 310px;
+	height: 180px;
 	
 }
 
