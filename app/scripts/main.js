@@ -1,17 +1,16 @@
-
+/* global $ */
+'use strict';
 $(document).ready(function() {
-    $("#kv").animate({
-      opacity:1,
-      "margin-top":"+=100",
+    $('#kv').animate({
+      opacity: 1,
+      'margin-top': '+=100'
+    }, 1000);
 
-    },1000)
+  $('nav').animate({
+      'margin-top': '+=10'
+    }, 1500);
 
-  $("nav").animate({
-      "margin-top":"+=10",
-
-    },1500);
-
-  $("#about").click(function(){
-    $("#kv").fadeOut("slow");
+  $('#about').click(function(){
+    $('#kv').fadeOut('slow');
   });
 });
