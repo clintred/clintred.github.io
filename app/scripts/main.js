@@ -1,6 +1,6 @@
 /* global $ */
 'use strict';
-console.warn("hahaha");
+console.warn('develop');
 $(document).ready(function() {
     $('#kv').animate({
       opacity: 1,
