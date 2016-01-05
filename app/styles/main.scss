@@ -194,7 +194,6 @@ header{
 .about .wrapper .vline{
   width: 3px;height: 320px;
   background: url(../images/vline.png) repeat-y;
-  transform:rotate(90deg);
   margin:0px 0 0 0;
 }
 
@@ -310,8 +309,7 @@ header{
 
 /*art區塊*/
 .art{
-  heightf: 400px;
-  backgrofund: #287ebf;
+
 }
 .art .wrapper{
   max-width: 950px;
@@ -330,7 +328,16 @@ header{
   width: 310px;
   height: 180px;
   display: inline-block;
-  
+}
+
+.art .unit{
+  background-color: #eee;
+  width: 380px;
+  height: 180px;
+  &>div{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .lionhead{
