@@ -1,3 +1,21 @@
+$font-color: #6c6c6c;
+
+@keyframes weak {
+    0% {
+       opacity: 0;
+       transform: translate3d(0, -10%, 0);
+    }
+    100% {
+       opacity: 1;
+       transform: none;
+    }
+}
+
+.weak {
+  -webkit-animation-name: weak;
+  animation-name: weak;
+}
+
 body{
   margin:0;
   font-family: Helvertica Light,Arial,微軟正黑體,新細明體;
@@ -6,18 +24,17 @@ body{
 }
 
 header{
-    width: 960px;
-    height: 44px;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
+  width: 960px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wrapper_kv{
   width: 960px;
-  margin:0 auto;
+  margin: 0 auto;
   z-index: 1;
-  margin-top:-100px; //initial
 
   #kv{
     background: url(../images/kv.png) top no-repeat;
@@ -25,20 +42,18 @@ header{
     height: 710px;
     margin: 0 auto;
     display: flex;
-    justify-content:center;
-    align-items:flex-end;
-    /*initial*/
+    justify-content: center;
+    align-items: flex-end;
     opacity: 0;
-    filter: alpha(opacity=0); /* For IE8 and earlier */ 
+    animation-duration: 1s;
 
     p{
         width: 200px;
         height: 60px;
-        
         text-align: center;
         font-family: Helvertica Light,Arial,微軟正黑體,新細明體;
         font-size: 12px;
-        color:#6c6c6c;
+        color: $font-color;
         line-height: 18px;
     }
 
@@ -49,15 +64,15 @@ header{
     margin:0 auto;
     margin-bottom:80px;
     display:flex;
-    justify-content:space-between;
-    font-family:Helvetica,arial;
+    justify-content: space-between;
+    font-family: Helvetica,arial;
     font-weight: lighter;
     font-size: 18px;
-    /*initial*/
     margin-top: -60px;
+    animation-duration: 1.5s;
 
     div{
-      color: #6c6c6c;
+      color: $font-color;
       text-align: center;
       width: 80px;
       transition: all 0.5s ease-in-out;
@@ -68,7 +83,7 @@ header{
       width: 80px;  
     }
     div:visited{
-      color: #6c6c6c;
+      color: $font-color;
       text-align: center;
       width: 80px;  
     }
@@ -91,16 +106,15 @@ header{
   background: url(../images/fb.png) no-repeat;
   margin: 10px 0 0 0;
   transition: all 0.5s ease-in-out;
-}
-
-#functionbtn:hover{
-  width: 22px;height: 22px;
-  background: url(../images/fb_hover.png) no-repeat;
-  margin: 10px 0 0 0;
+  &:hover{
+    width: 22px;height: 22px;
+    background: url(../images/fb_hover.png) no-repeat;
+    margin: 10px 0 0 0;
+  }
 }
 
 #design{
-  background-color: #ffdd00;
+  
 }
 
 #art{
@@ -118,19 +132,17 @@ header{
   text-align: center;
   font-family:Helvetica,Arial;
   font-weight: lighter;
+  h1{
+    font-weight: lighter;
+    font-size: 50px;
+    color:#636363;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    bfackground: #3a9f73;
+    height: 80px;
+  }
 }
-
-.mainSection h1{
-  font-weight: lighter;
-  font-size: 50px;
-  color:#636363;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  padding-top: 20px;
-  bfackground: #3a9f73;
-  height: 80px;
-}
-
 
 /*about區塊*/
 .about {
@@ -149,7 +161,7 @@ header{
 
       .artist_name{
         font-size: 25px;
-        color:#6c6c6c;
+        color:$font-color;
       }
 
       .txt{
@@ -170,7 +182,7 @@ header{
     .artist{
       line-height: 25px;
       font-size: 14px;
-      color:#6c6c6c;
+      color:$font-color;
       width: 220px;
       div{
         float:right;
@@ -217,8 +229,9 @@ header{
     margin: 0 auto;
 
     .unit{
-      
-      max-width: 225px;max-height: 300px;
+      outline: none;
+      max-width: 225px;
+      max-height: 300px;
       float:left;
       text-align: left;
       line-height: 19px;
@@ -226,9 +239,7 @@ header{
       font-family: helvetica,arial,微軟正黑體,新細明體;
       .pic_unit{
         position: relative;
-        width: 225px;
         height: 160px;
-        display: inline-block;
         &:before{
           content: '';
           display: block;
@@ -237,16 +248,12 @@ header{
           width: 100%;
           height: 100%;
           position: absolute;
-
           transition: all .5s ease-in-out;
-          /*initial*/
           opacity: 1;
-          filter: alpha(opacity=100);
         }
         &:hover:before{
           background-color: rgba(255,255,255, .7);
           opacity: 1;
-          filter: alpha(opacity=100);
         }
         &:after{
           content: '';
@@ -259,19 +266,17 @@ header{
           top: 50%;
           transform: translate(-50%, 100%);
           opacity: 0;
-          filter: alpha(opacity=0);
           background-image: url(../images/btn_zoomIn.svg);
           transition: all .5s ease-in-out;
         }
 
         &:hover:after{
           opacity: 1;
-          filter: alpha(opacity=100);
           transform: translate(-50%, -50%) rotate(540deg);
         }
       }
       .title{
-        color:#6c6c6c;
+        color:$font-color;
         padding-top: 5px;
       }
       .client{
