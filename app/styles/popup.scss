@@ -1,0 +1,129 @@
+.popup_bg{
+  background: #fff;
+  
+  width: 100%;height: 100%;
+  
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */  
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  display: none;
+}
+
+/*-----popup design-----*/
+/*-----popup design-----*/
+/*-----popup design-----*/
+
+.design .popup_design{
+  width: 900px;height: 570px;
+  
+  margin: 0 auto;
+  text-align: center;
+  background: #333333;
+  position: relative;
+  z-index: 100;
+  top:-300px;
+
+display: none;
+
+}
+.design .popup_design .pic{
+  
+  overflow: hidden;
+  width:inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.design .popup_design .pic img{
+  width: inherit;
+}
+.design .popup_design .title_pic{
+  width: 176px;height: 33px;
+  background: #eb426a;
+  position: absolute;
+  top: 575px;
+
+  font-size: 25px;
+  color:#fff;
+
+  font-weight: lighter;
+  padding: 5px 5px 1px 10px;
+  text-align: left;
+}
+.design .popup_design .btn_x{
+  
+  background:url(../images/xx.svg) no-repeat ; 
+  width: 47px;height: 47px;
+  position: absolute;
+  top: -23px;
+  right: -23px;
+  position: block;
+
+}
+.design .popup_design .btn_x label{
+  color:#eb426a;
+  font-size: 35px;
+  
+  float:right;
+  margin-top:50px;
+}
+
+/*-----popup art-----*/
+/*-----popup art-----*/
+/*-----popup art-----*/
+
+.art .popup_art{
+  width: 900px;height: 570px;
+  
+  
+  background: #333333;
+  margin:0 auto; 
+  z-index: 100;
+  position: relative;
+display: none;
+}
+.art .popup_art .pic{
+  
+  overflow: hidden;
+  width:inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.art .popup_art .pic img{
+  width: inherit;
+}
+.art .popup_art .title_pic{
+  width: 176px;height: 33px;
+  background: #eb426a;
+  position: absolute;
+  top: 575px;
+
+  font-size: 25px;
+  color:#fff;
+
+  font-weight: lighter;
+  padding: 5px 5px 1px 10px;
+  text-align: left;
+}
+.art .popup_art .btn_x{
+  
+  background:url(../images/xx.svg) no-repeat ; 
+  width: 47px;height: 47px;
+  position: absolute;
+  top: -23px;
+  right: -23px;
+  position: block;
+
+}
+.art .popup_art .btn_x label{
+  color:#eb426a;
+  font-size: 35px;
+  
+  float:right;
+  margin-top:50px;
+}
